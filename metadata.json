@@ -1,0 +1,6 @@
+{
+  "name": "Apollo Clinic Colaba",
+  "description": "Official website for Apollo Clinic in Colaba, Mumbai, featuring online appointment booking, patient reviews, service listings, timings, and contact information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
