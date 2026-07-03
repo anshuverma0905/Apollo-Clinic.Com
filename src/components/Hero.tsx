@@ -101,50 +101,57 @@ export default function Hero({ onBookClick, onLocationClick }: HeroProps) {
             </div>
           </div>
 
-          {/* Right Section: Core Hospital Metrics (Stark block design) */}
-          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 relative">
-            
-            {/* Card 1 - Experience */}
-            <div className="bg-white p-6 border-2 border-slate-200 flex flex-col justify-between space-y-4 shadow-xs">
-              <div className="w-10 h-10 bg-slate-100 text-blue-900 flex items-center justify-center font-black">
-                <Shield className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="block text-2xl font-black text-blue-900 font-display">APOLLO</span>
-                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Healthcare Brand</span>
-              </div>
-            </div>
-
-            {/* Card 2 - Speed */}
-            <div className="bg-white p-6 border-2 border-slate-200 flex flex-col justify-between space-y-4 shadow-xs sm:mt-6">
-              <div className="w-10 h-10 bg-slate-100 text-blue-900 flex items-center justify-center font-black">
-                <Clock className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="block text-2xl font-black text-blue-900 font-display">1 HOUR</span>
-                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Lab Report Email</span>
+          {/* Right Section: Hero Image & Key Metrics */}
+          <div className="lg:col-span-5 space-y-6">
+            {/* Hero Image Block */}
+            <div className="bg-white border-4 border-slate-950 p-2 shadow-sm relative group">
+              <img
+                src="/src/assets/images/clinic_doctor_hero_1783095470282.jpg"
+                alt="Apollo Clinic Colaba Specialist Doctor"
+                className="w-full h-auto object-cover border-2 border-slate-200"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute bottom-4 left-4 bg-slate-950 text-white border border-slate-800 px-3 py-1 text-[9px] font-black uppercase tracking-widest">
+                Apollo Bandar Medical Team
               </div>
             </div>
 
-            {/* Card 3 - Reviews */}
-            <div className="bg-white p-6 border-2 border-slate-200 flex flex-col justify-between space-y-4 shadow-xs">
-              <div className="w-10 h-10 bg-slate-100 text-blue-900 flex items-center justify-center font-black">
-                <Users className="w-5 h-5" />
+            {/* Stark Grid of Core Metrics */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Metric 1 - Brand */}
+              <div className="bg-white p-4 border-2 border-slate-200 flex flex-col justify-between space-y-2">
+                <Shield className="w-4 h-4 text-blue-900" />
+                <div>
+                  <span className="block text-lg font-black text-blue-900 font-display uppercase tracking-tight">APOLLO</span>
+                  <span className="block text-[8px] font-black text-slate-400 uppercase tracking-widest">Healthcare Brand</span>
+                </div>
               </div>
-              <div>
-                <span className="block text-2xl font-black text-blue-900 font-display">870+</span>
-                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Happy Patients</span>
-              </div>
-            </div>
 
-            {/* Card 4 - Doctors */}
-            <div className="bg-white p-6 border-2 border-slate-200 flex flex-col justify-between space-y-4 shadow-xs sm:mt-6">
-              <div className="w-10 h-10 bg-slate-100 text-blue-900 flex items-center justify-center font-black">
-                <Award className="w-5 h-5" />
+              {/* Metric 2 - Speed */}
+              <div className="bg-white p-4 border-2 border-slate-200 flex flex-col justify-between space-y-2">
+                <Clock className="w-4 h-4 text-blue-900" />
+                <div>
+                  <span className="block text-lg font-black text-blue-900 font-display uppercase tracking-tight">1 HOUR</span>
+                  <span className="block text-[8px] font-black text-slate-400 uppercase tracking-widest">Lab Report Email</span>
+                </div>
               </div>
-              <div>
-                <span className="block text-2xl font-black text-blue-900 font-display">15+ YRS</span>
-                <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Average Exp.</span>
+
+              {/* Metric 3 - Patients */}
+              <div className="bg-white p-4 border-2 border-slate-200 flex flex-col justify-between space-y-2">
+                <Users className="w-4 h-4 text-blue-900" />
+                <div>
+                  <span className="block text-lg font-black text-blue-900 font-display uppercase tracking-tight">870+</span>
+                  <span className="block text-[8px] font-black text-slate-400 uppercase tracking-widest">Happy Patients</span>
+                </div>
+              </div>
+
+              {/* Metric 4 - Experience */}
+              <div className="bg-white p-4 border-2 border-slate-200 flex flex-col justify-between space-y-2">
+                <Award className="w-4 h-4 text-blue-900" />
+                <div>
+                  <span className="block text-lg font-black text-blue-900 font-display uppercase tracking-tight">15+ YRS</span>
+                  <span className="block text-[8px] font-black text-slate-400 uppercase tracking-widest">Average Exp.</span>
+                </div>
               </div>
             </div>
           </div>

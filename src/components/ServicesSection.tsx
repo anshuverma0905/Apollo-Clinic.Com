@@ -27,17 +27,30 @@ export default function ServicesSection({ onServiceSelect }: ServicesSectionProp
     <div className="bg-white py-16 border-t border-slate-200" id="clinic-services-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
-        <div className="text-left max-w-4xl space-y-4 mb-12">
-          <span className="text-xs font-black text-blue-800 uppercase tracking-widest block border-l-4 border-blue-800 pl-3">
-            Comprehensive Medical Diagnostics
-          </span>
-          <h3 className="text-3xl sm:text-5xl font-black text-blue-900 tracking-tighter font-display uppercase leading-none">
-            OUR SPECIALTIES & SERVICE PACKAGES
-          </h3>
-          <p className="text-sm text-slate-600 max-w-2xl font-medium leading-relaxed">
-            Apollo Clinic Colaba combines state-of-the-art pathology, high-precision imaging systems, and experienced specialist doctors to manage all your clinical needs.
-          </p>
+        {/* Header Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mb-12">
+          <div className="md:col-span-8 space-y-4 text-left">
+            <span className="text-xs font-black text-blue-800 uppercase tracking-widest block border-l-4 border-blue-800 pl-3">
+              Comprehensive Medical Diagnostics
+            </span>
+            <h3 className="text-3xl sm:text-5xl font-black text-blue-900 tracking-tighter font-display uppercase leading-none">
+              OUR SPECIALTIES & SERVICE PACKAGES
+            </h3>
+            <p className="text-sm text-slate-600 max-w-2xl font-medium leading-relaxed">
+              Apollo Clinic Colaba combines state-of-the-art pathology, high-precision imaging systems, and experienced specialist doctors to manage all your clinical needs.
+            </p>
+          </div>
+          <div className="md:col-span-4 border-4 border-slate-900 p-1 bg-white relative">
+            <img
+              src="/src/assets/images/diagnostic_lab_1783095502446.jpg"
+              alt="High precision pathology laboratory"
+              className="w-full h-36 object-cover border border-slate-200"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute bottom-2.5 right-2.5 bg-slate-950 text-white px-2 py-0.5 text-[8px] font-black uppercase tracking-widest">
+              NABL ACCREDITED LAB
+            </div>
+          </div>
         </div>
 
         {/* Tab Selection */}
@@ -116,17 +129,29 @@ export default function ServicesSection({ onServiceSelect }: ServicesSectionProp
         </div>
 
         {/* Highlights Corporate Banner */}
-        <div className="mt-12 bg-slate-50 border-2 border-slate-300 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="space-y-1 text-left">
+        <div className="mt-12 bg-slate-50 border-2 border-slate-300 p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div className="md:col-span-8 space-y-3 text-left">
             <h4 className="font-black text-blue-900 text-sm sm:text-base uppercase tracking-tight">Need a custom health package tailored to your workplace?</h4>
-            <p className="text-xs text-slate-500 font-medium">We design corporate health checkup panels, wellness programs, and onsite diagnostic screenings in Colaba.</p>
+            <p className="text-xs text-slate-500 font-medium leading-relaxed">
+              We design corporate health checkup panels, employee wellness programs, and onsite diagnostic screenings for organizations in Colaba and South Mumbai.
+            </p>
+            <div className="pt-2">
+              <a
+                href="tel:02222021122"
+                className="inline-block bg-blue-800 hover:bg-blue-900 text-white font-black text-[10px] uppercase tracking-widest py-3 px-5 transition-all cursor-pointer"
+              >
+                Inquire Corporate Plan
+              </a>
+            </div>
           </div>
-          <a
-            href="tel:02222021122"
-            className="bg-blue-800 hover:bg-blue-900 text-white font-black text-[11px] uppercase tracking-widest py-3.5 px-6 whitespace-nowrap transition-all cursor-pointer"
-          >
-            Inquire Corporate Plan
-          </a>
+          <div className="md:col-span-4 border-2 border-slate-300 p-1 bg-white">
+            <img
+              src="/src/assets/images/corporate_wellness_1783095487093.jpg"
+              alt="Corporate Wellness Checkup"
+              className="w-full h-32 md:h-28 object-cover border border-slate-100"
+              referrerPolicy="no-referrer"
+            />
+          </div>
         </div>
 
       </div>
